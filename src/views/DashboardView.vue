@@ -153,6 +153,7 @@ function eliminarDta(titleData) {
                 type="text"
                 class="form-control"
                 v-model="new_a.title"
+                :disabled="titleN==='Editar'"
               />
             </div>
             <div class="mb-3">
