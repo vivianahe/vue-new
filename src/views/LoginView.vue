@@ -30,6 +30,7 @@ defineProps(
           placeholder="name@example.com"
           @input="$emit('update:email',$event.target.value)"
           :value="email"
+          required
         />
       </div>
       <div class="col-12 mb-5">
@@ -42,6 +43,7 @@ defineProps(
           id="exampleFormControlInput1"
           @input="$emit('update:password',$event.target.value)"
           :value="password"
+          required
         />
       </div>
       <div class="col-12 mb-5">
